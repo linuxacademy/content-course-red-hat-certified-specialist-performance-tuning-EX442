@@ -1,0 +1,10 @@
+[Unit]
+Description=Demo service using the stopme1.sh script
+
+[Service]
+User=cloud_user
+WorkingDirectory=/home/cloud_user
+ExecStart=/usr/bin/bash /home/cloud_user/stopme1.sh
+
+[Install]
+WantedBy=multi-user.target

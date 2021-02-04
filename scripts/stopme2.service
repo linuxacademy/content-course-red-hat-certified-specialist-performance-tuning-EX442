@@ -1,0 +1,10 @@
+[Unit]
+Description=Demo service using the stopme2.sh script to spike cpu
+
+[Service]
+User=cloud_user
+WorkingDirectory=/home/cloud_user
+ExecStart=/usr/bin/bash /home/cloud_user/stopme2.sh
+
+[Install]
+WantedBy=multi-user.target
